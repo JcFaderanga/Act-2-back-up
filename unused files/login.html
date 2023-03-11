@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Login</title>
+  <!--FOTNS-->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,200;1,300&display=swap" rel="stylesheet">
+  <!--ICONS-->
+  <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+  <!--JQUERY-->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.3/jquery.min.js"></script>
+  <script src="http://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
+  <!--CSS-->
+  <link rel="stylesheet" href="login.css">
+  <link rel="stylesheet" href="main.css">
+  <link rel="stylesheet" href="responsive.css">
+</head>
+<body>
+  <div id="particle-js" class="container">
+    <form action="#">
+      <div class="login-label">
+        <span id="title">LOGIN</span>
+      </div>
+      <div class="from-group" >
+        <div id="login" class="text-field-mobile">
+          <fieldset>
+            <legend>Username</legend>
+            <input id="username-login" type="text" placeholder="Enter Username here">
+          </fieldset>
+          <fieldset>
+            <legend>Password</legend>
+            <input id="password-login" type="Password" placeholder="Enter Password here">
+          </fieldset>
+             <button id="btn-submit">login</button>
+            <span id="span-register">Dont have accout? &nbsp;<label id="register-now">register now!</label></span>
+        </div>
+      </div>
+    </form>
+    <form style="display: none;" action="#">
+      <div class="login-label">
+        <span id="title">LOGIN</span>
+      </div>
+      <div id="register" style="display: none;" class="from-group" >
+        <div class="text-field-mobile">
+          <fieldset>
+            <legend>Username</legend>
+            <input id="username-login" type="text" placeholder="Enter Username here">
+          </fieldset>
+          <fieldset>
+            <legend>Password</legend>
+            <input id="password-login" type="Password" placeholder="Enter Password here">
+          </fieldset>
+           <div class="register">
+             <fieldset>
+               <legend>Email</legend>
+               <input id="gmail" type="text" placeholder="Enter Email here">
+             </fieldset>
+             <fieldset>
+                 <legend>Address</legend>
+                 <textarea id="product-mobile" type="text" placeholder="Enter Address here"></textarea>
+             </fieldset>
+           </div>
+             <button id="btn-submit">login</button>
+            <span id="span-register">Dont have accout? &nbsp;<label id="register-now">register now!</label></span>
+        </div>
+      </div>
+    </form>
+  </div>
+<script src="particle.js"></script>
+<script src="register.js"></script>
+</body>
+</html>
